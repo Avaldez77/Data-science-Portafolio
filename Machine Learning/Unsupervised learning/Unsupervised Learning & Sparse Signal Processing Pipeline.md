@@ -1,3 +1,5 @@
+<img width="1226" height="818" alt="image" src="https://github.com/user-attachments/assets/65db7fc3-8473-4244-bad9-a44f3d200946" />
+
 # Unsupervised Learning & Sparse Signal Processing Pipeline
 
 ## 🔍 Overview
