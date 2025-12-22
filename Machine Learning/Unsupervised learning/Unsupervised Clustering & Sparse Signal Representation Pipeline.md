@@ -74,5 +74,3 @@ This project demonstrates the ability to:
 - Understand and control numerical behavior beyond library abstractions
 - Bridge **machine learning**, **linear algebra**, and **signal processing**
 - Communicate technical results clearly and professionally
-
-It reflects a problem-solving mindset focused on **robustness**, **interpretability**, and **methodological rigor**, which is critical for real-world data science, applied research, and advanced analytics roles.
