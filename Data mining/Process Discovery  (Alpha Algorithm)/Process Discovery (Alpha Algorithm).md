@@ -1,3 +1,6 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/50464e21-52b8-4e20-89fb-372ceb2d0c25" />
+
+
 # Interpretable Process Discovery from Event Logs (Alpha Algorithm)
 
 ## 🔍 Overview
