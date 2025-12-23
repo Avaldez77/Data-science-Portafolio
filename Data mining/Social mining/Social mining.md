@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6b840488-24ef-4984-b779-48c55dd5bc01" />
+
 # Social Mining Enhancement — Resource Interaction Analysis (pm4py)
 
 ## 🔍 Overview
