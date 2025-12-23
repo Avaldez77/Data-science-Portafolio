@@ -1,3 +1,6 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0d913256-482b-4f5a-bc21-9ab15d6644c9" />
+
+
 # Exploratory Process Mining (pm4py)
 
 ## 🔍 Overview
@@ -5,8 +8,6 @@ This project applies exploratory process mining techniques to a real-world event
 The analysis focuses on understanding actual process behavior by examining traces, activity sequences, variants, and execution patterns derived directly from event data.
 
 The work emphasizes transparency and interpretability, preserving all intermediate outputs to enable a clear understanding of how insights are produced.
-
----
 
 ## 🎯 Objective
 - Explore and understand process behavior using event log data  
