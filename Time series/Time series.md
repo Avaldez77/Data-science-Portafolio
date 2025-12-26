@@ -1,3 +1,5 @@
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/1bece150-865d-4042-8a7c-5e88a3a7290d" />
+
 # Time Series Projects
 
 This folder contains a collection of projects focused on statistical time series analysis,
