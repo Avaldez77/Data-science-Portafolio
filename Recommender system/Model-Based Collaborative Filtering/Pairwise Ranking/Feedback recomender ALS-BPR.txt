@@ -1,0 +1,43 @@
+🔍Improved Prompt (Portfolio Markdown with Fixed Section Titles)
+
+Create a professional Markdown (.md) file for my portfolio based on the most recently uploaded file.
+
+Mandatory structure (do not rename, remove, or reorder these sections):
+
+🔍 Overview
+
+🎯 Objective
+
+🧠 Methodology
+
+📊 Key Results
+
+🛠 Technologies & Skills
+
+🧩 Why This Project Matters
+
+Content requirements:
+
+Write everything in English, with no exceptions.
+
+The tone must be professional and portfolio-ready, not academic or instructional.
+
+Do not reference courses, subjects, assignments, professors, or educational context.
+
+Describe the project as a real-world or professional implementation.
+
+Be concise but meaningful; avoid filler text.
+
+Additional outputs (outside the Markdown):
+
+Indicate the project category it belongs to (e.g. Machine Learning, Deep Learning, Time Series, Recommender Systems, Data Engineering, etc.).
+
+Propose a clean, professional filename for the Markdown file (English only, lowercase, hyphen-separated).
+
+Constraints:
+
+Do not change the section titles or remove the icons.
+
+Do not include explanations about what you are doing.
+
+Deliver a polished Markdown file ready to be uploaded directly to a portfolio.
