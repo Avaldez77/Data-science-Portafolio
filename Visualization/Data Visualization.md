@@ -1,5 +1,7 @@
 # Data Visualization – Portfolio Overview
 
+<img width="1536" height="1024" alt="Data visualization" src="https://github.com/user-attachments/assets/795880fb-f5e4-4024-87a2-aad264312ccc" />
+
 ## 🔹 General Topics Summary
 This section of the portfolio focuses on **data visualization as a core component of data analytics**. The projects emphasize how visual representations transform raw data into understandable insights, enabling pattern detection, comparison, and effective communication of results.
 
