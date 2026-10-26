@@ -10,6 +10,15 @@ running a notebook or script. Results in synthetic-data exercises are
 illustrative and should not be interpreted as clinical, financial, or
 operational advice.
 
+## Connected portfolio
+
+This repository focuses on statistical analysis and modeling within a
+four-part data and automation portfolio. See the
+[profile overview](https://github.com/Avaldez77/Avaldez77) or explore
+[Data Analytics](https://github.com/Avaldez77/Data-Analytics-Portafolio),
+[Data Engineering & Big Data](https://github.com/Avaldez77/Data-Engineering-Big-Data-Portafolio),
+and [RPA & Process Automation](https://github.com/Avaldez77/RPAs-Portafolio).
+
 ## Explore by topic
 
 | Topic | Contents |
