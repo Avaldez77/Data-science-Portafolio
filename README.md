@@ -25,7 +25,7 @@ operational advice.
 | [Statistical Learning](./Statistical%20Learning/) | Generalization, classification, and model evaluation |
 | [Time series](./Time%20series/) | Forecasting methods and temporal validation |
 | [Visualization](./Visualization/) | Analytical communication and visual exploration |
-| [Hands-on exercises](./Exercises/README.md) | Model validation, rolling-origin forecasting, and responsible-threshold challenges |
+| [Hands-on exercises](./Exercises/README.md) | Model validation, rolling-origin forecasting, difference-in-differences, and survival modeling |
 
 ## Reproducibility
 
@@ -34,3 +34,5 @@ operational advice.
 - Keep generated files and local environment settings out of version control.
 - Report validation metrics and limitations; do not imply a model is suitable for
   deployment based only on a demonstration.
+- The reproducible exercises identify their illustrative data and assumptions;
+  results are not evidence from a clinical study or production deployment.

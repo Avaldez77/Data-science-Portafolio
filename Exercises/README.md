@@ -22,8 +22,27 @@ occur after its training origin.
 
 ```bash
 Rscript "Exercises/Time Series Backtesting/rolling_origin.R"
+Rscript "Exercises/Impact Evaluation/difference_in_differences.R"
+Rscript "Exercises/Time-to-Event Analysis/survival_analysis.R"
 Rscript "Exercises/tests.R"
 ```
+
+The impact-evaluation and survival examples are seeded and identify their
+illustrative data in their individual READMEs. The survival workflow uses
+`survival`; the other runnable exercises use base R.
+
+## Difference-in-differences impact evaluation
+
+The [impact evaluation exercise](./Impact%20Evaluation/README.md) estimates a
+two-group, multi-period difference-in-differences effect and forms a
+unit-cluster bootstrap interval. Review the pre-intervention trend diagnostic
+and assumptions before interpreting the estimate causally.
+
+## Time-to-event analysis
+
+The [survival analysis exercise](./Time-to-Event%20Analysis/README.md) uses
+`survival::Surv`, Kaplan-Meier curves, a log-rank comparison, and a Cox
+proportional-hazards model on seeded right-censored data.
 
 ## Further challenges
 

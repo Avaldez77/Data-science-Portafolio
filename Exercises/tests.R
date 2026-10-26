@@ -1,5 +1,7 @@
 source("Exercises/Model Validation/solution.R")
 source("Exercises/Time Series Backtesting/rolling_origin.R")
+source("Exercises/Impact Evaluation/difference_in_differences.R")
+source("Exercises/Time-to-Event Analysis/survival_analysis.R")
 
 stopifnot(abs(roc_auc(c(0, 1), c(0.1, 0.9)) - 1) < 1e-12)
 stopifnot(abs(roc_auc(c(0, 1), c(0.5, 0.5)) - 0.5) < 1e-12)
@@ -24,5 +26,32 @@ seasonal <- backtest$predictions[
     backtest$predictions$origin == 52,
 ]
 stopifnot(isTRUE(all.equal(as.numeric(seasonal$prediction), c(1, 2))))
+
+did_data <- generate_did_panel()
+did_result <- estimate_did(did_data, bootstrap_replicates = 200)
+stopifnot(abs(did_result$estimate - 5) < 1)
+stopifnot(length(did_result$confidence_interval_95) == 2)
+stopifnot(all(is.finite(did_result$confidence_interval_95)))
+stopifnot(
+  inherits(
+    try(estimate_did(did_data[-1, ], bootstrap_replicates = 200), silent = TRUE),
+    "try-error"
+  )
+)
+
+survival_data <- generate_survival_data(n = 300)
+survival_result <- fit_survival_analysis(survival_data)
+stopifnot(survival_result$observed_events > 0)
+stopifnot(survival_result$censored_records > 0)
+stopifnot(is.finite(survival_result$treatment_hazard_ratio))
+stopifnot(
+  inherits(
+    try(
+      fit_survival_analysis(transform(survival_data, time = -time)),
+      silent = TRUE
+    ),
+    "try-error"
+  )
+)
 
 cat("R exercise checks passed\n")
