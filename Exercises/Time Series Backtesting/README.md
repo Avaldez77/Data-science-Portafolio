@@ -13,7 +13,10 @@ Rscript "Exercises/Time Series Backtesting/rolling_origin.R"
 The script reports MAE and RMSE across all forecast origins. Each prediction
 stores the training origin and target week, making temporal separation
 inspectable. The synthetic results are educational and are not evidence of
-real-world forecasting performance.
+real-world forecasting performance. In the generated example, the last-value
+baseline outperforms seasonal-naive because the series has a strong trend;
+this is intentional evidence that a plausible seasonal baseline is not
+automatically a good benchmark.
 
 ## Extend the exercise
 
