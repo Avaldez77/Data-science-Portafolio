@@ -1,0 +1,16 @@
+name: Exercise checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  base-r-exercise:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Run model validation exercise
+        run: Rscript "Exercises/Model Validation/solution.R"
