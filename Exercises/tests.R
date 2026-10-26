@@ -23,6 +23,6 @@ seasonal <- backtest$predictions[
   backtest$predictions$method == "seasonal_naive" &
     backtest$predictions$origin == 52,
 ]
-stopifnot(identical(seasonal$prediction, c(1, 2)))
+stopifnot(isTRUE(all.equal(as.numeric(seasonal$prediction), c(1, 2))))
 
 cat("R exercise checks passed\n")
