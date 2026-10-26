@@ -25,7 +25,7 @@ operational advice.
 | [Statistical Learning](./Statistical%20Learning/) | Generalization, classification, and model evaluation |
 | [Time series](./Time%20series/) | Forecasting methods and temporal validation |
 | [Visualization](./Visualization/) | Analytical communication and visual exploration |
-| [Hands-on exercises](./Exercises/README.md) | Reproducible model validation and responsible-threshold challenges |
+| [Hands-on exercises](./Exercises/README.md) | Model validation, rolling-origin forecasting, and responsible-threshold challenges |
 
 ## Reproducibility
 

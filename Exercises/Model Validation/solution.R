@@ -36,6 +36,16 @@ safe_ratio <- function(numerator, denominator) {
 }
 
 roc_auc <- function(actual, probability) {
+  if (length(actual) == 0 || length(actual) != length(probability)) {
+    stop("actual and probability must have the same non-zero length")
+  }
+  if (anyNA(actual) || !all(actual %in% c(0, 1))) {
+    stop("actual must contain only non-missing binary values (0 or 1)")
+  }
+  if (anyNA(probability) || any(!is.finite(probability)) ||
+      any(probability < 0 | probability > 1)) {
+    stop("probability values must be finite and between 0 and 1")
+  }
   positive_count <- sum(actual == 1)
   negative_count <- sum(actual == 0)
   if (positive_count == 0 || negative_count == 0) return(NA_real_)
@@ -45,6 +55,14 @@ roc_auc <- function(actual, probability) {
 }
 
 classification_metrics <- function(actual, probability, threshold) {
+  if (length(threshold) != 1 || is.na(threshold) || !is.finite(threshold) ||
+      threshold < 0 || threshold > 1) {
+    stop("threshold must be a single finite value between 0 and 1")
+  }
+  if (length(actual) != length(probability) || length(actual) == 0) {
+    stop("actual and probability must have the same non-zero length")
+  }
+  roc_auc(actual, probability)
   predicted <- as.integer(probability >= threshold)
   true_positive <- sum(actual == 1 & predicted == 1)
   false_positive <- sum(actual == 0 & predicted == 1)

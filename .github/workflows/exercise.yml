@@ -14,3 +14,7 @@ jobs:
           use-public-rspm: true
       - name: Run model validation exercise
         run: Rscript "Exercises/Model Validation/solution.R"
+      - name: Run rolling-origin backtest
+        run: Rscript "Exercises/Time Series Backtesting/rolling_origin.R"
+      - name: Run exercise checks
+        run: Rscript Exercises/tests.R

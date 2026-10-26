@@ -13,15 +13,29 @@ Run it with:
 Rscript "Exercises/Model Validation/solution.R"
 ```
 
+## Rolling-origin time-series backtesting
+
+The [forecast backtest](./Time%20Series%20Backtesting/README.md) compares a
+last-observation baseline with a seasonal-naive baseline using expanding
+training windows. Each forecast is evaluated only against observations that
+occur after its training origin.
+
+```bash
+Rscript "Exercises/Time Series Backtesting/rolling_origin.R"
+Rscript "Exercises/tests.R"
+```
+
 ## Further challenges
 
-1. Replace the random holdout with a time-based split and explain when random
-   splitting would leak future information.
+1. For the classification example, replace the random holdout with a time-based
+   split and explain when random splitting would leak future information.
 2. Add calibration bins and a Brier score; compare probability quality with
    threshold-specific classification metrics.
 3. Add a bootstrap confidence interval for the AUC and report the resampling
    seed and method.
-4. Compare subgroup recall across thresholds. Discuss sample-size limitations
+4. For the forecasting example, add a rolling seasonal baseline with a
+   different period and document how the period is selected.
+5. Compare subgroup recall across thresholds. Discuss sample-size limitations
    and avoid treating parity in one metric as proof of fairness.
 
 **Acceptance criteria:** the data generation is seeded; the test set is never
