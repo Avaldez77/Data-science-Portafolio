@@ -19,6 +19,12 @@ four-part data and automation portfolio. See the
 [Data Engineering & Big Data](https://github.com/Avaldez77/Data-Engineering-Big-Data-Portafolio),
 and [RPA & Process Automation](https://github.com/Avaldez77/RPAs-Portafolio).
 
+## Featured end-to-end case
+
+[Capital Bikeshare Demand Intelligence](https://github.com/Avaldez77/BikeShare-Demand-Intelligence)
+includes a chronological demand-model evaluation in R and compares it with an
+hour-of-week baseline.
+
 ## Explore by topic
 
 | Topic | Contents |
